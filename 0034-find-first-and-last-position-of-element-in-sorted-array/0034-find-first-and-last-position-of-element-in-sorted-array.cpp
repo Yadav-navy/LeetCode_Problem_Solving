@@ -6,8 +6,7 @@ public:
         
         int start = 0;
         int end = nums.size() -1;
-        int mid;
-        // int mid = (start)+(end-start) /2;
+        int mid = (start)+(end-start) /2;
         int ans_first_occurence = -1;
             
         while (start <= end){
@@ -32,7 +31,7 @@ public:
         
         start = 0;
         end = nums.size() -1;
-        // mid = (start)+(end-start) /2;
+        mid = (start)+(end-start) /2;
         int ans_last_occurence = -1;
             
         while (start <= end){
