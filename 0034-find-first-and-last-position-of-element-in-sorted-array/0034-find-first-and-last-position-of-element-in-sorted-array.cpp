@@ -6,11 +6,11 @@ public:
         
         int start = 0;
         int end = nums.size() -1;
-        int mid = (start + end )/2;
+        int mid = (start)+(end-start) /2;
         int ans_first_occurence = -1;
             
         while (start <= end){
-            mid = (start+end)/2;
+            mid = (start)+(end-start) /2;
             if (nums[mid]==target){
                 ans_first_occurence = mid; //searching left side
                 end = mid - 1;
@@ -31,11 +31,11 @@ public:
         
         start = 0;
         end = nums.size() -1;
-        mid = (start + end )/2;
+        mid = (start)+(end-start) /2;
         int ans_last_occurence = -1;
             
         while (start <= end){
-            mid = (start+end)/2;
+            mid = (start)+(end-start) /2;
             if (nums[mid]==target){
                 ans_last_occurence = mid; //searching right side
                 start = mid + 1;
