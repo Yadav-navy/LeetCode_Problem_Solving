@@ -27,7 +27,7 @@ public:
             else if (nums[s] <= nums[mid]){
                 // left part sorted
                 if (target >= nums[s] && target <= nums[mid]){
-                    e = mid ;
+                    e = mid-1 ;
                 }
                 else{
                     s = mid + 1;
@@ -40,7 +40,7 @@ public:
                     s = mid +1;
                 }
                 else {
-                    e = mid ;
+                    e = mid-1 ;
                 }
             }
                      
