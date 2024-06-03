@@ -35,11 +35,11 @@ public:
         int pivot = -1;
         while (s<e){
             mid = s + (e - s) / 2;
-            if ( nums[mid] > nums[nums.size() - 1]){
+            if ( nums[mid] > nums[e]){
                 s = mid + 1;
                 
             }
-            else if (nums[mid] <= nums[nums.size() - 1]){
+            else if (nums[mid] <= nums[e]){
                 e = mid;                // can be the answer where the comes
                 cout<< "value of e" << e << endl;
             }
