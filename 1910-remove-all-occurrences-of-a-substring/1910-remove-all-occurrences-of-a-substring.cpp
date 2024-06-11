@@ -6,13 +6,13 @@ public:
         int i = 0;
         
         while(i <= (size_s - size_part)){
-            cout << s.substr(i,size_part) << endl;
+            // cout << s.substr(i,size_part) << endl;
             if (s.substr(i,size_part)==part){
                 s.erase(i,size_part);
-                cout << "after erasing " << s << endl;
+                // cout << "after erasing " << s << endl;
                 i=0;
                 size_s = s.length();
-                cout << s << endl;
+                // cout << s << endl;
                 continue;        
             }
             else{
