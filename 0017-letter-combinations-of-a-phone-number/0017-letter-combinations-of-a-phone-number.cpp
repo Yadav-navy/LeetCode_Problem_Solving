@@ -8,13 +8,14 @@ private:
         }
         int digit = digits[index] - 48;
         string digit_string = arr[digit];
-        cout << digit << " " << digit_string<< endl;
+        // cout << digit << " " << digit_string<< endl;
     
-        string temp = output;
+        // string temp = output;
         for (int j = 0;j < digit_string.size(); j++){
-            output = temp;
+            // output = temp;
             output = output + digit_string[j];
             Solve(digits, index+1, output, ans,arr);
+            output.pop_back();
             
         }
         
